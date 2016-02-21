@@ -169,3 +169,7 @@ h1 {
   -webkit-animation: bounce 3s infinite;
   animation: bounce 3s infinite;
 }
+
+.clearfix {
+  @include clearfix;
+}
