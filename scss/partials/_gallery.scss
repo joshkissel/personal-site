@@ -1,0 +1,31 @@
+.gallery-item {
+	position: relative;
+	overflow: hidden;
+}
+.text-overlay-container {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	color: white;
+	background: #064c65;
+	opacity: 0;
+
+	&:hover {
+		opacity: .95;
+	}
+
+	.text-overlay {
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+}
+
+.fade-in {
+  @include mui-fade(in);
+}

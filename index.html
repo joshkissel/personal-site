@@ -6,11 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Josh Kissel</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="scss/libs/paradeiser.min.css">
     <link href='https://fonts.googleapis.com/css?family=Cantarell|Fjalla+One' rel='stylesheet' type='text/css'>
   </head>
   <body>
 
-  <div class="top-bar menu-bar">
+
+    <nav class="paradeiser" id="paradeiser">
+        <a href="#">
+            <span class="paradiser_logo">Home</span>
+        </a>
+        <a href="#">
+            <span>Work</span>
+        </a>
+        <a href="resume.html">
+            <span>Résumé</span>
+        </a>
+        <a href="#">
+            <span>Contact</span>
+        </a>
+    </nav>
+
+
+  <!-- <div class="top-bar menu-bar">
     <div class="nav-left">
       <ul class="menu">
         <li class="menu-text">JOSH KISSEL</li>
@@ -23,7 +41,7 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </div>
-  </div>
+  </div> -->
 
 
   <div id="particles-js">
@@ -31,7 +49,7 @@
       <p>CONNECTING USERS THROUGH DESIGN ON AND OFF SCREEN</p>
     </div>
     <div class="row scroll-down">
-      <img src="images/assets/scroll-down.svg" class="column">
+      <div class="arrow bounce"></div>
     </div>
   </div>
 
@@ -43,26 +61,89 @@
   </div>
 
   <div class="expanded row small-up-1 medium-up-2 large-up-3 collapse">
-    <div class="columns">
+    <div class="gallery-item columns">
       <a href="#">
-        <img src="http://placehold.it/640x420">
+        <img src="https://unsplash.it/640/420/?image=0">
+
+        <div class="text-overlay-container fade-in slow">
+
+          <div class="text-overlay">
+            <h1>Text</h1>
+              <p>This is a thing</p>
+          </div>
+        </div>
       </a>
     </div>
-    <div class="columns">
-      <img src="http://placehold.it/640x420">
+    <div class="gallery-item columns">
+      <a href="#">
+        <img src="https://unsplash.it/640/420/?image=1002">
+
+        <div class="text-overlay-container fade-in slow">
+
+          <div class="text-overlay">
+            <h1>Text</h1>
+              <p>This is a thing</p>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="columns">
-      <img src="http://placehold.it/640x420">
+    <div class="gallery-item columns">
+
+      <a href="#">
+        <img src="https://unsplash.it/640/420/?image=885">
+
+        <div class="text-overlay-container fade-in slow">
+
+          <div class="text-overlay">
+            <h1>Text</h1>
+              <p>This is a thing</p>
+          </div>
+        </div>
+      </a>
+
     </div>
 
-    <div class="columns">
-      <img src="http://placehold.it/640x420">
+    <div class="gallery-item columns">
+
+      <a href="#">
+        <img src="https://unsplash.it/640/420/?image=861">
+
+        <div class="text-overlay-container fade-in slow">
+
+          <div class="text-overlay">
+            <h1>Text</h1>
+              <p>This is a thing</p>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="columns">
-      <img src="http://placehold.it/640x420">
+    <div class="gallery-item columns">
+
+      <a href="#">
+        <img src="https://unsplash.it/640/420/?image=823">
+
+        <div class="text-overlay-container fade-in slow">
+
+          <div class="text-overlay">
+            <h1>Text</h1>
+              <p>This is a thing</p>
+          </div>
+        </div>
+      </a>
     </div>
-    <div class="columns">
-      <img src="http://placehold.it/640x420">
+    <div class="gallery-item columns">
+
+      <a href="#">
+        <img src="https://unsplash.it/640/420/?image=801">
+
+        <div class="text-overlay-container fade-in slow">
+
+          <div class="text-overlay">
+            <h1>Text</h1>
+              <p>This is a thing</p>
+          </div>
+        </div>
+      </a>
     </div>
   </div>
 
@@ -92,6 +173,7 @@
     <script src="bower_components/what-input/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/foundation.js"></script>
     <script src="js/libs/particles.min.js"></script>
+    <script src="js/libs/headroom.min.js"></script>
     <script src="js/app.js"></script>
 
   </body>
