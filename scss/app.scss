@@ -8,6 +8,7 @@
 @import 'partials/footer';
 @import "partials/resume";
 @import "partials/gallery";
+@import "partials/404";
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -61,7 +62,7 @@ h1 {
 	padding: 3.1rem;
 }
 
-#particles-js {
+.hero-particles {
   position: relative;
 
   overflow: hidden;
