@@ -24,6 +24,39 @@
 		transform: translate(-50%, -50%);
 	}
 
+	&.orange {
+		background: #ED6D22;
+	}
+	&.red {
+		background: #D0462D;
+	}
+	&.green {
+		background: #6FC87B;
+	}
+	&.yellow {
+		background: #EDCA18;
+	}
+	&.red-2 {
+		background: #E33F2D;
+	}
+}
+
+.text-overlay {
+	h1 {
+		font-size: 18px;
+	}
+	p {
+		font-size: 18px;
+		text-transform: uppercase;
+		margin-top: 10px;
+	}
+}
+
+.divider {
+	border-bottom: 4px solid $white;
+	height: 4px;
+	width: 50px;
+	margin:auto;
 }
 
 .fade-in {

@@ -3,4 +3,24 @@ footer {
 	color: $white;
 	background-color: $black;
 	height: 140px;
+	padding: 56px 0;
+
+	a {
+		color: $white;
+		&:hover {
+			color: rgba(255, 255, 255, 0.7);
+		}
+	}
+}
+
+.footer-shim {
+	padding-top: 11px;
+}
+
+.copyright {
+	font-size: 12px;
+}
+
+.social {
+	float: right;
 }
