@@ -10,6 +10,7 @@
 @import "partials/resume";
 @import "partials/gallery";
 @import "partials/404";
+@import "partials/galleryItem.scss";
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -174,4 +175,8 @@ h1 {
 
 .clearfix {
   @include clearfix;
+}
+
+.button-no-marg {
+  margin: 0;
 }

@@ -1,5 +1,12 @@
 $(document).foundation();
 
+// enabling headroom
+var myElement = document.querySelector(".paradeiser");
+var headroom  = new Headroom(myElement, {
+    tolerance : 5
+});
+headroom.init();
+
 // /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 // particlesJS.load('particles-js', 'assets/particles.json', function() {
 //   console.log('callback - particles.js config loaded');
@@ -125,9 +132,3 @@ particlesJS('particles-js',
   }
 
 );
-    // enabling headroom
-    var myElement = document.querySelector(".paradeiser");
-    var headroom  = new Headroom(myElement, {
-        tolerance : 5
-    });
-    headroom.init();

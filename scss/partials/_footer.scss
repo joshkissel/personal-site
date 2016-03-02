@@ -1,9 +1,10 @@
 footer {
 	position: relative;
 	color: $white;
-	background-color: $black;
+	background-color: #0a2022;
 	height: 140px;
 	padding: 56px 0;
+
 
 	a {
 		color: $white;
@@ -23,4 +24,5 @@ footer {
 
 .social {
 	float: right;
+	text-transform: uppercase;
 }
