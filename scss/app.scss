@@ -50,6 +50,14 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
+//Pushing content down so that Paradeiser sits at top of page (no overlap)
+body {
+  margin-top: 50px;
+
+  @media (min-width: 768px){
+      margin-top: 75px;
+  }
+}
 
 h1 {
   font-family: $fjalla-header-font-family;
