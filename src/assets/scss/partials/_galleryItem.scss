@@ -46,14 +46,24 @@
 	font-size: 16px;
 	font-weight: bold;
 	}
-}
 
-// .red-change {
-// 	a {
-// 		color: #D0462D;
-//
-// 		&:hover {
-// 			color: lighten(#D0462D, 10%);
-// 		}
-// 	}
-// }
+	@media (max-width: 856px) {
+		margin-top: 7%;
+	}
+
+	.elemnt-red {
+
+		a {
+			color: #D0462D;
+
+			&:hover {
+				color: lighten(#D0462D, 10%);
+			}
+		}
+
+		button {
+			background: #D0462D;
+		}
+	}
+
+}

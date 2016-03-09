@@ -3,6 +3,17 @@
 	overflow: hidden;
 }
 .text-overlay-container {
+
+
+	@media (min-width: 640px){
+
+		opacity: 0;
+
+		&:hover {
+			opacity: .95;
+		}
+	}
+
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -10,11 +21,9 @@
 	position: absolute;
 	color: white;
 	background: #064c65;
-	opacity: 0;
+	opacity: .8;
 
-	&:hover {
-		opacity: .95;
-	}
+
 
 	.text-overlay {
 		text-align: center;
