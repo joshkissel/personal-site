@@ -51,19 +51,4 @@
 		margin-top: 7%;
 	}
 
-	.elemnt-red {
-
-		a {
-			color: #D0462D;
-
-			&:hover {
-				color: lighten(#D0462D, 10%);
-			}
-		}
-
-		button {
-			background: #D0462D;
-		}
-	}
-
 }

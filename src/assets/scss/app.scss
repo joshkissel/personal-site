@@ -4,14 +4,6 @@
 @import 'foundation';
 @import 'motion-ui';
 
-@import 'partials/home';
-@import "partials/paradeiser";
-@import 'partials/footer';
-@import "partials/resume";
-@import "partials/gallery";
-@import "partials/404";
-@import "partials/galleryItem.scss";
-
 @include foundation-global-styles;
 @include foundation-grid;
 @include foundation-typography;
@@ -51,24 +43,61 @@
 @include motion-ui-animations;
 
 
+@import 'partials/home';
+@import "partials/paradeiser";
+@import 'partials/footer';
+@import "partials/resume";
+@import "partials/gallery";
+@import "partials/404";
+@import "partials/galleryItem.scss";
+@import "partials/embed";
+
+
+
 //Pushing content down so that Paradeiser sits at top of page (no overlap)
 body {
-  margin-top: 50px;
-
-  @media (min-width: 768px){
-      margin-top: 75px;
-  }
+	margin-top: 50px;
+	@media (min-width: 768px) {
+		margin-top: 75px;
+	}
 }
 
 h1 {
-  font-family: $fjalla-header-font-family;
-  text-transform: uppercase;
+	font-family: $fjalla-header-font-family;
+	text-transform: uppercase;
 }
 
 .clearfix {
-  @include clearfix;
+	@include clearfix;
 }
 
 .button-no-marg {
-  margin: 0;
+	margin: 0;
+}
+
+a.red-elmnt {
+	background: #D0462D;
+
+	&:hover {
+		background: darken(#D0462D, 10%);
+	}
+
+  &:active {
+    background: darken(#D0462D, 10%);
+  }
+
+  &:visited {
+    background: #D0462D;
+  }
+
+	a {
+		color: #D0462D;
+		&:hover {
+			color: lighten(#D0462D, 10%);
+		}
+	}
+}
+
+.red-elmnt.divider {
+  border-bottom: 4px solid #D0462D;
 }
