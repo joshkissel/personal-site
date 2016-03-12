@@ -1,0 +1,17 @@
+.btn-even {
+	width: 45%;
+}
+
+.button-group .button:not(:last-child) {
+	border-right: 1px solid;
+}
+
+.connect {
+	p {
+		margin-bottom: 25px;
+	}
+
+	@media (min-width: 640px) {
+		margin-top: 50px;
+	}
+}

@@ -3,7 +3,6 @@
 	height: 512px;
 	max-height: 768px;
 	color: white;
-	background: #064c65;
 	position: relative;
 	overflow: hidden;
 
@@ -48,6 +47,9 @@
 	}
 	&.red-2 {
 		background: #E33F2D;
+	}
+	&.teal {
+		background: #00A77C;
 	}
 }
 

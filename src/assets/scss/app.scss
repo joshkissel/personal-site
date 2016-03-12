@@ -51,6 +51,7 @@
 @import "partials/404";
 @import "partials/galleryItem.scss";
 @import "partials/embed";
+@import "partials/contact";
 
 
 
@@ -90,10 +91,6 @@ a.red-elmnt {
     background: darken(#D0462D, 10%);
   }
 
-  &:visited {
-    background: #D0462D;
-  }
-
 	a {
 		color: #D0462D;
 		&:hover {
@@ -104,4 +101,20 @@ a.red-elmnt {
 
 .red-elmnt.divider {
   border-bottom: 4px solid #D0462D;
+}
+
+
+a.button.hollow.teal-elmnt {
+	border: 1px solid #00A77C;
+	color: #00A77C;
+
+	&:hover {
+		background: #00A77C;
+		color: $white;
+	}
+
+  &:active {
+    background: darken(#00A77C, 10%);
+  }
+
 }
