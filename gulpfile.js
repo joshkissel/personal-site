@@ -9,6 +9,8 @@ var sherpa   = require('style-sherpa');
 
 // Check for --production flag
 var isProduction = !!(argv.production);
+// change to "=true;" for production
+// change to "!!(argv.production);" for development
 
 // Port to use for the development server.
 var PORT = 8000;
