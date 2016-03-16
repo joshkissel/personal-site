@@ -1,6 +1,29 @@
 .gallery-item {
 	position: relative;
 	overflow: hidden;
+
+	img {
+		width: 100%;
+		height: auto;
+		max-width: 640px;
+		max-height: 480px;
+
+		&.orange {
+			background: #ED6D22;
+		}
+		&.red {
+			background: #D0462D;
+		}
+		&.green {
+			background: #6FC87B;
+		}
+		&.yellow {
+			background: #EDCA18;
+		}
+		&.red-2 {
+			background: #E53933;
+		}
+	}
 }
 .text-overlay-container {
 
