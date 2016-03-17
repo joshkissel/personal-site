@@ -80,6 +80,10 @@ h1 {
 	margin: 0;
 }
 
+a.button {
+	cursor: pointer;
+}
+
 a.red-elmnt {
 	background: #D0462D;
 
@@ -99,8 +103,23 @@ a.red-elmnt {
 	}
 }
 
-.red-elmnt.divider {
-  border-bottom: 4px solid #D0462D;
+a.yellow-elmnt {
+	background: #EDCA18;
+
+	&:hover {
+		background: darken(#EDCA18, 10%);
+	}
+
+  &:active {
+    background: darken(#EDCA18, 10%);
+  }
+
+	a {
+		color: #D0462D;
+		&:hover {
+			color: lighten(#EDCA18, 10%);
+		}
+	}
 }
 
 
@@ -117,4 +136,12 @@ a.button.hollow.teal-elmnt {
     background: darken(#00A77C, 10%);
   }
 
+}
+
+.red-elmnt.divider {
+  border-bottom: 4px solid #D0462D;
+}
+
+.yellow-elmnt.divider {
+  border-bottom: 4px solid #EDCA18;
 }
