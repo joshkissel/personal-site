@@ -84,7 +84,7 @@ a.button {
 	cursor: pointer;
 }
 
-a.red-elmnt {
+a.red-elmnt.button {
 	background: #D0462D;
 
 	&:hover {
@@ -94,16 +94,9 @@ a.red-elmnt {
   &:active {
     background: darken(#D0462D, 10%);
   }
-
-	a {
-		color: #D0462D;
-		&:hover {
-			color: lighten(#D0462D, 10%);
-		}
-	}
 }
 
-a.yellow-elmnt {
+a.yellow-elmnt.button {
 	background: #EDCA18;
 
 	&:hover {
@@ -113,13 +106,66 @@ a.yellow-elmnt {
   &:active {
     background: darken(#EDCA18, 10%);
   }
+}
 
-	a {
-		color: #D0462D;
-		&:hover {
-			color: lighten(#EDCA18, 10%);
-		}
+a.blue-elmnt.button {
+	background: #064c65;
+
+	&:hover {
+		background: darken(#064c65, 10%);
 	}
+
+  &:active {
+    background: darken(#064c65, 10%);
+  }
+}
+
+a.green-elmnt.button {
+	background: #6FC87B;
+
+	&:hover {
+		background: darken(#6FC87B, 10%);
+	}
+
+  &:active {
+    background: darken(#6FC87B, 10%);
+  }
+}
+
+a.red2-elmnt.button {
+	background: #E53933;
+
+	&:hover {
+		background: darken(#E53933, 10%);
+	}
+
+  &:active {
+    background: darken(#E53933, 10%);
+
+}
+
+a.blue-link {
+	color: #064c65;
+
+	&:hover {
+		color: darken(#064c65, 10%);
+	}
+
+  &:active {
+    color: darken(#064c65, 10%);
+  }
+}
+
+a.green-link {
+	color: #6FC87B;
+
+	&:hover {
+		color: darken(#6FC87B, 10%);
+	}
+
+  &:active {
+    color: darken(#6FC87B, 10%);
+  }
 }
 
 
@@ -138,10 +184,18 @@ a.button.hollow.teal-elmnt {
 
 }
 
+.blue-elmnt.divider {
+	border-bottom: 4px solid #064c65;
+}
+
 .red-elmnt.divider {
   border-bottom: 4px solid #D0462D;
 }
 
 .yellow-elmnt.divider {
   border-bottom: 4px solid #EDCA18;
+}
+
+.green-elmnt.divider {
+  border-bottom: 4px solid #6FC87B;
 }

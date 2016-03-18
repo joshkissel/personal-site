@@ -106,3 +106,24 @@
 	max-height: 650px;
 	margin: 3rem 0;
 }
+
+.more-work {
+	h2 {
+		font-size: 20px;
+		text-transform: uppercase;
+		padding-bottom: 20px;
+	}
+	.button {
+		width: 70%;
+		@media (min-width: 640px) {
+			width: 20%;
+		}
+	}
+	span {
+		font-size: 16px;
+		position: relative;
+	@media (min-width: 640px) {
+		top:2px;
+	}
+	}
+}
