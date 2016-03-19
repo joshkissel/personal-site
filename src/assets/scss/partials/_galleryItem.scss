@@ -5,7 +5,26 @@
 	color: white;
 	position: relative;
 	overflow: hidden;
-	background: #064c65;
+	background: $c-blue;
+
+	&.red {
+		background: $c-red;
+	}
+	&.green {
+		background: $c-green;
+	}
+	&.yellow {
+		background: $c-yellow;
+	}
+	&.red-2 {
+		background: $c-red-2;
+	}
+	&.teal {
+		background: $c-teal;
+	}
+	&.orange {
+		background: $c-orange;
+	}
 
 	.text-hero-block {
 		h1 {
@@ -18,39 +37,20 @@
 		}
 
 		@media (min-width: 640px) {
-		h1 {
-			font-size: 54px;
-		}
+			h1 {
+				font-size: 54px;
+			}
 
-		p {
-			padding-top: 10px;
+			p {
+				padding-top: 10px;
+			}
 		}
-	}
 
 		text-align: center;
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-	}
-
-	&.orange {
-		background: #ED6D22;
-	}
-	&.red {
-		background: #D0462D;
-	}
-	&.green {
-		background: #6FC87B;
-	}
-	&.yellow {
-		background: #EDCA18;
-	}
-	&.red-2 {
-		background: #E53933;
-	}
-	&.teal {
-		background: #00A77C;
 	}
 }
 
@@ -116,7 +116,10 @@
 	.button {
 		width: 70%;
 		@media (min-width: 640px) {
-			width: 20%;
+			width: 35%;
+		}
+		@media (min-width: 840px) {
+			width: 25%;
 		}
 	}
 	span {

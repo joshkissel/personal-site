@@ -15,34 +15,34 @@
 // @include foundation-badge;
 // @include foundation-breadcrumbs;
 @include foundation-button-group;
-@include foundation-callout;
+// @include foundation-callout;
 @include foundation-close-button;
 // @include foundation-drilldown-menu;
 // @include foundation-dropdown;
 // @include foundation-dropdown-menu;
-@include foundation-flex-video;
-@include foundation-label;
-@include foundation-media-object;
+// @include foundation-flex-video;
+// @include foundation-label;
+// @include foundation-media-object;
 @include foundation-menu;
 // @include foundation-off-canvas;
-@include foundation-orbit;
-@include foundation-pagination;
-@include foundation-progress-bar;
-@include foundation-slider;
+// @include foundation-orbit;
+// @include foundation-pagination;
+// @include foundation-progress-bar;
+// @include foundation-slider;
 // @include foundation-sticky;
-@include foundation-reveal;
-@include foundation-switch;
-@include foundation-table;
+// @include foundation-reveal;
+// @include foundation-switch;
+// @include foundation-table;
 // @include foundation-tabs;
-@include foundation-thumbnail;
+// @include foundation-thumbnail;
 @include foundation-title-bar;
-@include foundation-tooltip;
+// @include foundation-tooltip;
 @include foundation-top-bar;
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-
+@import 'partials/variables';
 @import 'partials/home';
 @import "partials/paradeiser";
 @import 'partials/footer';
@@ -85,117 +85,148 @@ a.button {
 }
 
 a.red-elmnt.button {
-	background: #D0462D;
+	background: $c-red;
 
 	&:hover {
-		background: darken(#D0462D, 10%);
+		background: darken($c-red, 10%);
 	}
 
   &:active {
-    background: darken(#D0462D, 10%);
+    background: darken($c-red, 10%);
   }
 }
 
 a.yellow-elmnt.button {
-	background: #EDCA18;
+	background: $c-yellow;
 
 	&:hover {
-		background: darken(#EDCA18, 10%);
+		background: darken($c-yellow, 10%);
 	}
 
   &:active {
-    background: darken(#EDCA18, 10%);
+    background: darken($c-yellow, 10%);
   }
 }
 
 a.blue-elmnt.button {
-	background: #064c65;
+	background: $c-blue;
 
 	&:hover {
-		background: darken(#064c65, 10%);
+		background: darken($c-blue, 10%);
 	}
 
   &:active {
-    background: darken(#064c65, 10%);
+    background: darken($c-blue, 10%);
   }
 }
 
 a.green-elmnt.button {
-	background: #6FC87B;
+	background: $c-green;
 
 	&:hover {
-		background: darken(#6FC87B, 10%);
+		background: darken($c-green, 10%);
 	}
 
   &:active {
-    background: darken(#6FC87B, 10%);
+    background: darken($c-green, 10%);
   }
 }
 
 a.red2-elmnt.button {
-	background: #E53933;
+	background: $c-red-2;
 
 	&:hover {
-		background: darken(#E53933, 10%);
+		background: darken($c-red-2, 10%);
 	}
 
   &:active {
-    background: darken(#E53933, 10%);
+    background: darken($c-red-2, 10%);
+	}
+}
 
+a.orange-elmnt.button {
+	background: $c-orange;
+
+	&:hover {
+		background: darken($c-orange, 10%);
+	}
+
+  &:active {
+    background: darken($c-orange, 10%);
+	}
 }
 
 a.blue-link {
-	color: #064c65;
+	color: $c-blue;
 
 	&:hover {
-		color: darken(#064c65, 10%);
+		color: darken($c-blue, 10%);
 	}
 
   &:active {
-    color: darken(#064c65, 10%);
+    color: darken($c-blue, 10%);
   }
 }
 
 a.green-link {
-	color: #6FC87B;
+	color: $c-green;
 
 	&:hover {
-		color: darken(#6FC87B, 10%);
+		color: darken($c-green, 10%);
 	}
 
   &:active {
-    color: darken(#6FC87B, 10%);
+    color: darken($c-green, 10%);
   }
 }
 
-
-a.button.hollow.teal-elmnt {
-	border: 1px solid #00A77C;
-	color: #00A77C;
+a.orange-link {
+	color: $c-orange;
 
 	&:hover {
-		background: #00A77C;
+		color: darken($c-orange, 10%);
+	}
+
+  &:active {
+    color: darken($c-orange, 10%);
+  }
+}
+
+a.button.hollow.teal-elmnt {
+	border: 1px solid $c-teal;
+	color: $c-teal;
+
+	&:hover {
+		background: $c-teal;
 		color: $white;
 	}
 
   &:active {
-    background: darken(#00A77C, 10%);
+    background: darken($c-teal, 10%);
   }
 
 }
 
 .blue-elmnt.divider {
-	border-bottom: 4px solid #064c65;
+	border-bottom: 4px solid $c-blue;
 }
 
 .red-elmnt.divider {
-  border-bottom: 4px solid #D0462D;
+  border-bottom: 4px solid $c-red;
+}
+
+.red-2-elmnt.divider {
+  border-bottom: 4px solid $c-red-2;
 }
 
 .yellow-elmnt.divider {
-  border-bottom: 4px solid #EDCA18;
+  border-bottom: 4px solid $c-yellow;
 }
 
 .green-elmnt.divider {
-  border-bottom: 4px solid #6FC87B;
+  border-bottom: 4px solid $c-green;
+}
+
+.orange-elmnt.divider {
+  border-bottom: 4px solid $c-orange;
 }

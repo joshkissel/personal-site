@@ -9,19 +9,19 @@
 		max-height: 480px;
 
 		&.orange {
-			background: #ED6D22;
+			background: $c-orange;
 		}
 		&.red {
-			background: #D0462D;
+			background: $c-red;
 		}
 		&.green {
-			background: #6FC87B;
+			background: $c-green;
 		}
 		&.yellow {
-			background: #EDCA18;
+			background: $c-yellow;
 		}
 		&.red-2 {
-			background: #E53933;
+			background: $c-red-2;
 		}
 	}
 }
@@ -43,23 +43,23 @@
 	left: 0;
 	position: absolute;
 	color: white;
-	background: #064c65;
+	background: $c-blue;
 	opacity: .8;
 
 	&.orange {
-		background: #ED6D22;
+		background: $c-orange;
 	}
 	&.red {
-		background: #D0462D;
+		background: $c-red;
 	}
 	&.green {
-		background: #6FC87B;
+		background: $c-green;
 	}
 	&.yellow {
-		background: #EDCA18;
+		background: $c-yellow;
 	}
 	&.red-2 {
-		background: #E53933;
+		background: $c-red-2;
 	}
 
 	.text-overlay {
