@@ -34,13 +34,15 @@
     			<p>Creating a Unified Identity</p>
     		</div>
     		<div class="row scroll-down">
-    			<div class="arrow bounce"></div>
+    			<a href="#di">
+    				<div class="arrow bounce"></div>
+    			</a>
     		</div>
     	</div>
     
     	<div class="row">
     		<div class="column small-12 call-out text-center">
-    			<h1>Brand Evolution</h1>
+    			<h1 id="di">Brand Evolution</h1>
     			<p>Refining a Brand to Increase Recognition</p>
     			<div class="orange-elmnt divider"></div>
     		</div>
@@ -154,6 +156,22 @@
     	</footer>
     
     	<script src="../assets/js/app.js"></script>
+    	<script>
+    $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+    	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    		var target = $(this.hash);
+    		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    		if (target.length) {
+    			$('html, body').animate({
+    				scrollTop: target.offset().top
+    			}, 1000);
+    			return false;
+    		}
+    	}
+    });
+    });
+    </script>
     
     </body>
     

@@ -33,13 +33,15 @@
 			<p>Matching Identity to Environment</p>
 		</div>
 		<div class="row scroll-down">
-			<div class="arrow bounce"></div>
+			<a href="#denver">
+				<div class="arrow bounce"></div>
+			</a>
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="column small-12 call-out text-center">
-			<h1>Branding Art</h1>
+			<h1 id="denver">Branding Art</h1>
 			<p>An Identity Case Study</p>
 			<div class="yellow-elmnt divider"></div>
 		</div>
@@ -210,7 +212,22 @@
 	</footer>
 
 	<script src="../assets/js/app.js"></script>
-
+	<script>
+	$(function() {
+	$('a[href*="#"]:not([href="#"])').click(function() {
+		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			if (target.length) {
+				$('html, body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
+		}
+	});
+	});
+	</script>
 </body>
 
 </html>

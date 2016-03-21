@@ -95,6 +95,8 @@ gulp.task('sass', function() {
     html: ['src/**/*.html'],
     ignore: [
       new RegExp('^meta\..*'),
+      new RegExp('.*\.paradeiser.*'),
+      new RegExp('.*\.headroom--.*'),
       new RegExp('^\.is-.*')
     ]
   }));

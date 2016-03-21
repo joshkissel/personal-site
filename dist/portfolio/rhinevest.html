@@ -34,13 +34,15 @@
     			<p>Investing in Digital Connections</p>
     		</div>
     		<div class="row scroll-down">
-    			<div class="arrow bounce"></div>
+    			<a href="#rhinevest">
+    				<div class="arrow bounce"></div>
+    			</a>
     		</div>
     	</div>
     
     	<div class="row">
     		<div class="column small-12 call-out text-center">
-    			<h1>Business Launch</h1>
+    			<h1 id="rhinevest">Business Launch</h1>
     			<p>From Design to Development</p>
     			<div class="green-elmnt divider"></div>
     		</div>
@@ -137,6 +139,22 @@
     	</footer>
     
     	<script src="../assets/js/app.js"></script>
+    	<script>
+    $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+    	if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    		var target = $(this.hash);
+    		target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    		if (target.length) {
+    			$('html, body').animate({
+    				scrollTop: target.offset().top
+    			}, 1000);
+    			return false;
+    		}
+    	}
+    });
+    });
+    </script>
     
     </body>
     
