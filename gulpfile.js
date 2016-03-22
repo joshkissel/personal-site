@@ -8,7 +8,7 @@ var sequence = require('run-sequence');
 var sherpa   = require('style-sherpa');
 
 // Check for --production flag
-var isProduction = true;
+var isProduction = !!(argv.production);
 // change to "true" for production
 // change to "!!(argv.production)" for development
 

@@ -12,13 +12,17 @@
   color: $white;
   width: 100%;
 
-  p {
+  p, h1 {
     max-width: 493px;
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  h1 {
+    padding-bottom: 150px;
   }
 
   @media (min-width: 640px) {

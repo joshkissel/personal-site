@@ -5,4 +5,4 @@ RewriteRule ^(.*)$ http://joshkissel.com$1 [R=301,L]
 RewriteCond %{THE_REQUEST} ^.*/index.html
 RewriteRule ^(.*)index.html$ http://johskissel.com$1 [R=301,L]
 
-ErrorDocument 404 404.html
+ErrorDocument 404 /404.html
