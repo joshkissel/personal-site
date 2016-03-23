@@ -97,6 +97,7 @@ gulp.task('sass', function() {
       new RegExp('^meta\..*'),
       new RegExp('.*\.paradeiser.*'),
       new RegExp('.*\.headroom--.*'),
+      new RegExp('.*\.hero-particles.*'),
       new RegExp('^\.is-.*')
     ]
   }));
