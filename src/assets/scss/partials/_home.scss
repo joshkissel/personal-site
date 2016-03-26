@@ -5,10 +5,11 @@
   width: 100%;
   max-height: 650px;
   background-color: #0a2022;
+  z-index: 1;
 
-  canvas {
-    opacity: .3;
-  }
+  // .particles-js-canvas-el {
+  //   opacity: .3;
+  // }
 }
 
 .hero-text {
@@ -26,6 +27,10 @@
   }
 
   h1 {
+    padding-bottom: 120px;
+  }
+
+  h1.404 {
     padding-bottom: 150px;
   }
 
@@ -41,6 +46,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 60px;
+  z-index: 10;
 }
 
 .call-out {
