@@ -8,7 +8,7 @@ var sequence = require('run-sequence');
 var sherpa   = require('style-sherpa');
 
 // Check for --production flag
-var isProduction = !!(argv.production);
+var isProduction = true;
 // change to "true" for production
 // change to "!!(argv.production)" for development
 
@@ -97,7 +97,6 @@ gulp.task('sass', function() {
       new RegExp('^meta\..*'),
       new RegExp('.*\.paradeiser.*'),
       new RegExp('.*\.headroom--.*'),
-      new RegExp('.*\.hero-particles.*'),
       new RegExp('^\.is-.*')
     ]
   }));
