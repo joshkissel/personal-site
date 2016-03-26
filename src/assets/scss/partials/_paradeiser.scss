@@ -25,7 +25,7 @@ $paradeiser-height-desktop: 75px !default;
 $paradeiser-mobile-only: false !default;
 
 // using san francsico on iOS9 and OSX 10.11 onwards.
-$paradeiser-font-family: -apple-system, -apple-system-body, 'Cantarell', Roboto, Arial, sans-serif !default;
+$paradeiser-font-family: -apple-system, -apple-system-body, 'cantarellregular', Roboto, Arial, sans-serif !default;
 $paradeiser-font-weight: 400 !default;
 
 // determines the maximum size for icons, turn this up if you want your icons to be bigger
@@ -153,7 +153,7 @@ body {
 	.fjalla {
 
     span {
-		font-family: 'Fjalla One','Roboto', sans-serif;
+		font-family: 'fjalla_oneregular','Roboto', sans-serif;
 		font-size: 18px;
     color: $c-teal;
     }
