@@ -1,8 +1,8 @@
 RewriteBase /
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^www.joshkissel.com$ [NC]
-RewriteRule ^(.*)$ http://joshkissel.com$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.jk.joshkissel.com$ [NC]
+RewriteRule ^(.*)$ http://jk.joshkissel.com$1 [R=301,L]
 RewriteCond %{THE_REQUEST} ^.*/index.html
-RewriteRule ^(.*)index.html$ http://joshkissel.com$1 [R=301,L]
+RewriteRule ^(.*)index.html$ http://jk.joshkissel.com$1 [R=301,L]
 
 ErrorDocument 404 /404.html

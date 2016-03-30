@@ -231,3 +231,9 @@ a.button.hollow.teal-elmnt {
 .orange-elmnt.divider {
   border-bottom: 4px solid $c-orange;
 }
+
+
+.row.expanded.contain {
+	max-width: 1920px;
+	margin: 0 auto;
+}
