@@ -1,19 +1,6 @@
-# ZURB Template
+# Personal Portfolio
 
-[![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
-
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
-
-This is the official ZURB Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). We use this template at ZURB to deliver static code to our clients. It has a Gulp-powered build system with these features:
-
-- Handlebars HTML templates with Panini
-- Sass compilation and prefixing
-- JavaScript module bundling with webpack
-- Built-in BrowserSync server
-- For production builds:
-  - CSS compression
-  - JavaScript compression
-  - Image compression
+Personal website built using Foundation's CLi
 
 ## Installation
 
@@ -24,47 +11,56 @@ To use this template, your computer needs:
 
 This template can be installed with the Foundation CLI, or downloaded and set up manually.
 
-### Using the CLI
+### Running Project
 
-Install the Foundation CLI with this command:
-
-```bash
-npm install foundation-cli --global
-```
-
-Use this command to set up a blank Foundation for Sites project with this template:
+`cd` to your cloned repo and to install dependencies to run locally. 
 
 ```bash
-foundation new --framework sites --template zurb
+npm install 
 ```
 
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
+### Watch
 
-Now `cd` to your project name and to start your project run 
+While inside of your app's folder, use the `watch` command to assemble your app and run a test server.
 
 ```bash
 foundation watch
 ```
 
-### Manual Setup
+While this process is running, you can view the assembled app in your browser, at this URL:
 
-To manually set up the template, first download it with Git:
+```
+http://localhost:8001
+```
+
+While the server is running, any changes you make to your HTML, Sass, or JavaScript will automatically be processed and added to your live app.
+
+### Build
+
+To build your app for production, use `foundation build`.
 
 ```bash
-git clone https://github.com/zurb/foundation-zurb-template projectname
+foundation build
 ```
 
-Then open the folder in your command line, and install the needed dependencies:
+### Update
+
+Updates your Bower packages, which includes Foundation. Run this command when you want to update an existing project to the newest version of Foundation.
 
 ```bash
-cd projectname
-npm install
+foundation update
 ```
 
-Finally, run `npm start` to run Gulp. Your finished site will be created in a folder called `dist`, viewable at this URL:
+### Help
 
-```
-http://localhost:8000
+Lists all available commands in the CLI.
+
+```bash
+foundation help
 ```
 
-To create compressed, production-ready assets, run `npm run build`.
+Add a command name at the end to learn how a specific command works.
+
+```bash
+foundation help new
+```
