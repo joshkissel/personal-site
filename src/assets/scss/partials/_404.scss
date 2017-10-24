@@ -1,0 +1,25 @@
+.fourofour-particles {
+  position: relative;
+
+  width: 100%;
+  height: calc(100vh - 189px);
+  min-height: 300px;
+  overflow: hidden;
+  background-color: #0a2022;
+
+  @media (min-width: 640px){
+      height: calc(100vh - 140px);
+  }
+
+}
+
+.hero-text-button {
+  a {
+    margin-top: 100px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
